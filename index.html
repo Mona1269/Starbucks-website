@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive  starbucks website</title>
+    <link rel="stylesheet" href="style.css">
+    
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+    <!--navbar-->
+    <header>
+        <a href="#" class="logo"><img src="p imgs/starbucks logo.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li> 
+            <li><a href="#delivery">Delivery</a></li>
+             <li><a href="#app">App</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="contact.html">Contact</a></li>
+              <div class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><p id="count">0</p>
+              </div>
+        </ul>
+    </header>
+    <section class="home" id="home">
+        <div class="home-text">
+            <span>Welcome To</span>
+            <h1>starbucks Coffee</h1>
+            <h2>Free Coffee is a <br> tap away</h2>
+            <a href="#" class="btn">Join Now!</a>
+        </div>
+            
+                <div class="home-img">
+                    <img src="p imgs/home.png" alt="">
+
+               
+            </div>
+           
+    </section>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2"> 
+             <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+
+            <div class="slide first">
+                <img src="p imgs/slider1.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="p imgs/slider3.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="p imgs/slider4.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="p imgs/slider5.webp" alt="">
+            </div>
+            <div class="slide">
+                <img src="p imgs/slider2.jpeg" alt="">
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+        </div>
+    </div>
+    <script type="Text/javascript">
+         var counter=1;
+  setInterval(function(){
+    document.getElementById('radio'+ counter).checked = true;
+    counter++;
+    if (counter>5){
+      counter=1
+    }
+  }, 5000);
+    </script>
+     <section class ="shop" id="shop">
+        <div class="heading">
+            <span>Shop Now</span>
+            <h1>Shop Coffee</h1>
+          </div>
+          <div class="Shop-Container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="p imgs/shop2.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half '></i>
+                </div>
+                <h2>starbucks coffe</h2>
+                <span>$ 15.6</span>
+                <a href="#" class="btn">ADD TO CART</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="p imgs/shop1.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half '></i>
+                </div>
+                <h2>starbucks cheesecake Frappuccino</h2>
+                <span>$ 18.6</span>
+                <TO href="#" class ="btn" >ADD TO CART</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="p imgs/shop3.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half '></i>
+                </div>
+                <h2>starbucks  Frappuccino</h2>
+                <span>$ 19.6</span>
+                <a href="#" class="btn">ADD TO CART</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="p imgs/star1.png" alt="">
+                </div>
+                
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half '></i>
+                </div>
+                <h2>starbucks coffe</h2>
+                <span>$ 20</span>
+                <a href="#" class="btn">ADD TO CART</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="p imgs/cake3.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half '></i>
+                </div>
+                <h2>starbucks coffe</h2>
+                <span>$ 15</span>
+                <a href="#" class="btn">ADD TO CART</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="p imgs/cake2.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half '></i>
+                </div>
+                <h2>starbucks coffe</h2>
+                <span>$ 19.5</span>
+                <a href="#" class="btn">ADD TO CART</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="p imgs/cake1.png" alt="">
+                </div>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half '></i>
+                </div>
+                <h2>starbucks coffe</h2>
+                <span>$ 17.6</span>
+                <a href="#" class="btn">ADD TO CArt</a>
+            </div>
+          </div>
+           </section> 
+
+
+           <section class="delivery" id="delivery">
+            <div class="heading">
+                <span>Get Now</span>
+                <h1>Order With Uper Eats</h1>
+
+            </div>
+            <div class="container">
+               
+                <div class="delivery-text">
+                    <h2>Today deserve delivary</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere quia labore soluta nesciunt. Ab quis aperiam perspiciatis ducimus qui at.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere quia labore soluta nesciunt. Ab quis aperiam perspiciatis ducimus qui at.</p>
+                    <a href="#" class="btn">Order Now</a>
+                    <div class="delivery-img">
+                        <img src="p imgs/delivery.png">
+                    </div>
+                    
+                </div>
+                <div class="container">
+                    
+                    <div class="app-text">
+                        <h2>Fall int an easiar routing</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere quia labore soluta nesciunt. Ab quis aperiam perspiciatis ducimus qui at.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere quia labore soluta nesciunt. Ab quis aperiam perspiciatis ducimus qui at.</p>
+                        <a href="#" class="btn">Get App</a>
+                        <div class="app-img">
+                            <img src="p imgs/app.png">
+                        </div>
+                        
+                    </div>
+            </div>
+           </section>
+           <section class="about" id="about">
+            
+                
+                <div class="about-text">
+                    <h2>50 years of serving community</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere quia labore soluta nesciunt. Ab quis aperiam perspiciatis ducimus qui at.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere quia labore soluta nesciunt. Ab quis aperiam perspiciatis ducimus qui at.</p>
+                    <a href="#" class="btn">learn more!</a>
+                    <div class="about-img">
+                        <img src="p imgs/about.png">
+                    </div>
+                    
+                </div>
+           </section>
+           <section class="contact" id="Contact">
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms Of Use</a>
+                <a href="#">Our Company</a>
+                <a href="#">Privacy Policy</a>
+
+            </div>
+            <p>&#169; CarpoolVenom All Right Reservd.</p>
+           </section>
